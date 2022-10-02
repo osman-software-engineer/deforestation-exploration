@@ -1,1 +1,1 @@
-# sql-project-1
+# https://github.com/osmanacademy/sql-project-1/wiki
