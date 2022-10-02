@@ -13,3 +13,26 @@ You’ve been able to find tables of data online dealing with forestation as wel
 &nbsp;&nbsp;* All of the columns of the origin tables<br>
 &nbsp;&nbsp;* A new column that provides the percent of the land area that is designated as forest.
 5. Keep in mind that the column forest_area_sqkm in the forest_area table and the land_area_sqmi in the land_area table are in different units (square kilometers and square miles, respectively), so an adjustment will need to be made in the calculation you write (1 sq mi = 2.59 sq km).
+
+# Instructions
+You will be creating a report for the executive team in which you explain your results using complete sentences.
+
+# Report Sections
+The report has five sections that you will need to complete:
+1. Global Situation
+2. Regional Outlook
+3. Country-Level Detail
+4. Recommendations
+5. Appendix: SQL queries used
+
+You'll find further details on what you should complete for these sections on the next few pages.
+
+# Project Starter Template
+We've provided a template for you that you can use for your report. You can get the template in either of the following formats:
+
+&nbsp;&nbsp;* [Click here to download the template as a Microsoft Word (docx) file](https://video.udacity-data.com/topher/2020/April/5e952379_project-starter-template-deforestation-exploration-solution-template/project-starter-template-deforestation-exploration-solution-template.docx).<br>
+&nbsp;&nbsp;* [Click here to get a Google doc version](https://docs.google.com/document/d/1XERnuppRwuy3FuzGMBQMXu8aExcB6e9_4EFm4H7DC_g/copy). Click the Make a copy button to get your own copy that you can edit.<br>
+Once you have completed the report, you can export it as a PDF file to submit for review.
+
+# Project Rubric
+When you submit your project, we'll give it a thorough review and provide you with feedback on what you did well and anything that needs to be improved. To see the exact criteria that your reviewer will use to check your work, you can look over the [project rubric](https://review.udacity.com/#!/rubrics/3297/view).
