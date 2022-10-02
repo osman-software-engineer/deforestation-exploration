@@ -54,3 +54,17 @@ e. If you compare the amount of forest area lost between 1990 and 2016, to which
 
 ![screen-shot-2021-05-05-at-1 36 13-pm](https://user-images.githubusercontent.com/62555366/193467366-4f908d24-953e-41d0-ae44-0e5acd8f02e1.png)
 
+#REGIONAL OUTLOOK
+Answering these questions will help you add information into the template.
+Use these questions as guides to write SQL queries.
+Use the output from the query to answer these questions.
+
+Create a table that shows the Regions and their percent forest area (sum of forest area divided by sum of land area) in 1990 and 2016. (Note that 1 sq mi = 2.59 sq km).
+Based on the table you created, ....
+
+a. What was the percent forest of the entire world in 2016? Which region had the HIGHEST percent forest in 2016, and which had the LOWEST, to 2 decimal places?
+
+b. What was the percent forest of the entire world in 1990? Which region had the HIGHEST percent forest in 1990, and which had the LOWEST, to 2 decimal places?
+
+c. Based on the table you created, which regions of the world DECREASED in forest area from 1990 to 2016?
+
