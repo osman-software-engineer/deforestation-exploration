@@ -36,3 +36,21 @@ Once you have completed the report, you can export it as a PDF file to submit fo
 
 ## Project Rubric
 When you submit your project, we'll give it a thorough review and provide you with feedback on what you did well and anything that needs to be improved. To see the exact criteria that your reviewer will use to check your work, you can look over the [project rubric](https://review.udacity.com/#!/rubrics/3297/view).
+
+# Global Situation:
+
+Answering these questions will help you add information into the template.
+Use these questions as guides to write SQL queries.
+Use the output from the query to answer these questions.
+a. What was the total forest area (in sq km) of the world in 1990? Please keep in mind that you can use the country record denoted as “World" in the region table.
+
+b. What was the total forest area (in sq km) of the world in 2016? Please keep in mind that you can use the country record in the table is denoted as “World.”
+
+c. What was the change (in sq km) in the forest area of the world from 1990 to 2016?
+
+d. What was the percent change in forest area of the world between 1990 and 2016?
+
+e. If you compare the amount of forest area lost between 1990 and 2016, to which country's total area in 2016 is it closest to?
+
+![screen-shot-2021-05-05-at-1 36 13-pm](https://user-images.githubusercontent.com/62555366/193467366-4f908d24-953e-41d0-ae44-0e5acd8f02e1.png)
+
