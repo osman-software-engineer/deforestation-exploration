@@ -68,3 +68,5 @@ b. What was the percent forest of the entire world in 1990? Which region had the
 
 c. Based on the table you created, which regions of the world DECREASED in forest area from 1990 to 2016?
 
+![screen-shot-2021-05-05-at-1 36 13-pm](https://user-images.githubusercontent.com/62555366/193467366-4f908d24-953e-41d0-ae44-0e5acd8f02e1.png)
+
