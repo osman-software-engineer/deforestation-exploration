@@ -54,7 +54,7 @@ e. If you compare the amount of forest area lost between 1990 and 2016, to which
 
 ![screen-shot-2021-05-05-at-1 36 13-pm](https://user-images.githubusercontent.com/62555366/193467366-4f908d24-953e-41d0-ae44-0e5acd8f02e1.png)
 
-#REGIONAL OUTLOOK
+## REGIONAL OUTLOOK
 Answering these questions will help you add information into the template.
 Use these questions as guides to write SQL queries.
 Use the output from the query to answer these questions.
