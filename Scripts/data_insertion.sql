@@ -13,3 +13,8 @@ COPY regions(country_code, country_name, region, income_group)
 FROM 'C:\Users\mdosm\DataGripProjects\sql-project-1\Data\regions_table_results.csv'
 DELIMITER ','
 CSV HEADER;
+
+COPY forestation_table(country_code, country_name, year, forest_area_sqkm, total_area_sq_mi, region, income_group, forest_percentage)
+FROM 'C:\Users\mdosm\DataGripProjects\sql-project-1\Data\forestation.csv'
+DELIMITER ','
+CSV HEADER;
