@@ -88,3 +88,6 @@ e. How many countries had a percent forestation higher than the United States in
 
 ![screen-shot-2021-05-05-at-1 43 34-pm](https://user-images.githubusercontent.com/62555366/193467660-99e91def-2756-475a-b33c-846265d480d5.png)
 
+## Data Analyst Report
+
+# https://github.com/osmanacademy/sql-project-1/wiki
