@@ -12,9 +12,9 @@ CREATE TABLE IF NOT EXISTS land_area (
    total_area_sq_mi DOUBLE PRECISION
 );
 
-CREATE TABLE IF NOT EXISTS land_area (
+CREATE TABLE IF NOT EXISTS regions (
    country_code TEXT,
    country_name TEXT ,
-   year TEXT,
-   total_area_sq_mi DOUBLE PRECISION
+   region TEXT,
+   income_group TEXT
 );
