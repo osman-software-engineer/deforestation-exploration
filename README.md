@@ -90,4 +90,4 @@ e. How many countries had a percent forestation higher than the United States in
 
 ## Data Analyst Report
 
-# https://github.com/osmanacademy/sql-project-1/wiki
+# [https://github.com/osmanacademy/sql-project-1/wiki](https://github.com/osmanacademy/sql-deforestation-exploration/wiki)
