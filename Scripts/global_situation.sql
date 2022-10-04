@@ -55,4 +55,3 @@ WHERE fview.total_area_sq_mi <= (SELECT sub.change_sqkm / 2.59 AS total_area_sq_
 ORDER BY fview.total_area_sq_mi DESC
 LIMIT 1;
 
-SELECT * FROM forestation where country_name = 'Peru'

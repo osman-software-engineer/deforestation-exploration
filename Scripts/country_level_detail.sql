@@ -44,14 +44,15 @@ WITH forestation_1990 AS
           WHERE year = 2016
             AND forest_area_sqkm IS NOT NULL
             AND country_name != 'World')
-SELECT forestation_1990.country_name,
-       forestation_2016.region,
-Round((((forestation_1990.forest_area_sqkm -
-forestation_2016.forest_area_sqkm)/(forestation_1990.forest_area_sqkm))*100)::Numeric, 2) percent_change
+SELECT forestation_1990.country_name "Country",
+       forestation_2016.region       "Region",
+       Round((((forestation_1990.forest_area_sqkm -
+                forestation_2016.forest_area_sqkm) / (forestation_1990.forest_area_sqkm)) * 100)::Numeric,
+             2)                      "Pct Forest Area Change"
 FROM forestation_1990
          JOIN forestation_2016
               ON forestation_2016.country_name = forestation_1990.country_name
-ORDER BY percent_change DESC
+ORDER BY "Pct Forest Area Change" DESC
 LIMIT 5;
 --### c. If countries were grouped by percent forestation in quartiles, which group had the most countries in it in 2016?
 WITH t1 AS
@@ -64,23 +65,32 @@ WITH t1 AS
           GROUP BY country_name,
                    year,
                    forest_area_sqkm, forest_percentage)
-SELECT Distinct(quartiles),
-               count(country_name) Over (PARTITION BY quartiles)
+SELECT Distinct(quartile),
+               count(country_name) Over (PARTITION BY quartile)
 FROM (SELECT country_name,
              CASE
-                 WHEN forest_percentage < 25 THEN '1st Quarter'
+                 WHEN forest_percentage < 25 THEN '1'
                  WHEN forest_percentage >= 25
-                     AND forest_percentage < 50 THEN '2nd Quarter'
+                     AND forest_percentage < 50 THEN '2'
                  WHEN forest_percentage >= 50
-                     AND forest_percentage < 75 THEN '3rd Quarter'
-                 ELSE '4th Quarter'
-                 END AS quartiles
+                     AND forest_percentage < 75 THEN '3'
+                 ELSE '4'
+                 END AS quartile
       FROM t1
       WHERE forest_percentage IS NOT NULL
         AND year = 2016) sub
-ORDER BY quartiles;
+ORDER BY quartile;
 
 --### d. List all of the countries that were in the 4th quartile (percent forest > 75%) in 2016.
-
+SELECT country_name, region, forest_percentage
+from forestation
+WHERE year = 2016
+  and forest_percentage > 75
+ORDER BY 3 DESC;
 
 --### e. How many countries had a percent forestation higher than the United States in 2016?
+SELECT count(*)
+FROM forestation f WHERE year = 2016 and f.forest_percentage > (SELECT forest_percentage
+from forestation
+where forestation.country_name = 'United States'
+  AND year = 2016);
