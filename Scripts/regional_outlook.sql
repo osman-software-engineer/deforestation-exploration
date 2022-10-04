@@ -3,7 +3,7 @@ CREATE VIEW forestation_regional
 AS
 (SELECT year,
        region,
-       SUM(forest_area_sqkm) AS total_forest_area_sqkm,
+       SUM(forest_area_sqkm) AS forest_area_sqkm,
        SUM(total_area_sq_mi*2.59) AS total_area_sqkm,
         (SUM(forest_area_sqkm)/SUM(total_area_sq_mi*2.59))*100 AS percent_forest_area
 FROM forestation
