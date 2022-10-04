@@ -35,6 +35,7 @@ WHERE region != 'World'
 ORDER BY percent_forest_area
 LIMIT 1;
 
+
 -- 2a. What was the percent forest of the entire world in 1990?
 SELECT round((percent_forest_area)::numeric,2)
 FROM forestation_regional
@@ -72,12 +73,10 @@ WITH forestation_1990 AS
           WHERE year = 2016
           GROUP BY region, percent_forest_area
           ORDER BY percent_forest_area DESC)
-SELECT forestation_1990.region,
-       round((forestation_1990.percent_forest_area)::numeric,2),
-       round((forestation_2016.percent_forest_area)::numeric,2)
+SELECT forestation_1990.region "Region",
+       round((forestation_1990.percent_forest_area)::numeric,2) "1990 Forest Percentage",
+       round((forestation_2016.percent_forest_area)::numeric,2) "2016 Forest Percentage"
 FROM forestation_1990
          JOIN forestation_2016
-              ON forestation_1990.region = forestation_2016.region
-WHERE forestation_1990.percent_forest_area > forestation_2016.percent_forest_area
+              ON forestation_1990.region = forestation_2016.region;
 
-;
